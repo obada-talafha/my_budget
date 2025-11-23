@@ -8,8 +8,11 @@ plugins {
 android {
     namespace = "com.example.my_budget"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
-    ndkVersion "27.0.12077973"
+
+    // --- التصحيح هنا: تحديد نسخة NDK المطلوبة بسطر واحد صحيح ---
+    ndkVersion = "27.0.12077973"
+    // -----------------------------------------------------------
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
